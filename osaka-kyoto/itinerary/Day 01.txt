@@ -1,0 +1,28 @@
+<section 1>
+家 -> 桃園國際機場
+<connection: transport 1> 
+高鐵 616
+8:48 出發
+我會在桃園高鐵站出口等
+
+<section 2>
+桃園國際機場 -> 關西國際機場（KIX）
+<connection: trans 2>
+臺灣虎航
+航班編號：IT212
+時間：14:15
+Terminal 1
+
+<section 3>
+到達機場後注意事項：
+要去巴士站領回程的利木津巴士車票，才能離開
+
+<section 4>
+關西國際機場 -> 大阪日航酒店
+<connection: trans 4>
+inn 機場接送
+
+<section 5> 
+大阪日航酒店
+附近娛樂場所：道頓堀、心齋橋、百貨公司
+吃東西：大阪燒、鳴門鯛燒本舖
