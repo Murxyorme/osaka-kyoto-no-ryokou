@@ -317,7 +317,7 @@ h2 {
 }
 
 .illustrated-checkbox.is-animating .checkbox-art {
-  animation: checkbox-art-pop 320ms ease both;
+  animation: checkbox-art-pop 200ms ease both;
 }
 
 @keyframes checkbox-art-pop {
@@ -462,7 +462,7 @@ h2 {
 }
 
 .rating-choice.is-animating .rating-art {
-  animation: rating-art-pop 320ms ease both;
+  animation: rating-art-pop 200ms ease both;
 }
 
 @keyframes rating-art-pop {
