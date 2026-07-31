@@ -143,7 +143,7 @@ function updateCheckboxArt(checkbox, animate = false) {
     image.src = finalImage;
     label.classList.remove("is-animating");
     checkboxArtTimers.delete(checkbox);
-  }, 320);
+  }, 200);
 
   checkboxArtTimers.set(checkbox, timer);
 }
@@ -267,7 +267,7 @@ function setFoodRating(group, rating, animatedChoice = null) {
       image.src = finalImage;
       choice.classList.remove("is-animating");
       ratingArtTimers.delete(choice);
-    }, 320);
+    }, 200);
 
     ratingArtTimers.set(choice, timer);
   });
