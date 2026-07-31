@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>08/02 - 08/07大阪京都自由行</title>
+    <meta
+      name="description"
+      content="豬豬的第二次日本自由行。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="opening-screen" id="opening-screen" aria-label="網站開場畫面">
+      <div class="opening-bg"></div>
+      <div class="opening-bubbles" aria-hidden="true"></div>
+      <div class="opening-content">
+        <button class="opening-button" id="opening-button" type="button" aria-label="Open itinerary">
+          <img
+            src="figures/grand opening/Opening button.png"
+            alt="大阪京都旅行社出發"
+          />
+        </button>
+      </div>
+    </section>
+
+    <div class="page-overlay"></div>
+
+    <main class="cover-page" id="trip-content" hidden>
+      <section class="hero-panel">
+        <div class="hero-copy">
+          <p class="eyebrow">Osaka / Kyoto Trip</p>
+          <h1 class="sr-only">大阪京都旅行封面</h1>
+          <div class="hero-title-switcher" aria-live="polite">
+            <!--
+            <img
+              class="hero-title-banner hero-cover-banner"
+              data-title-banner="default"
+              src="figures/cover.jpg"
+              alt="大阪京都旅行封面"
+            />
+            -->
+            <section
+              class="travel-checklist"
+              data-title-banner="default"
+              aria-labelledby="travel-checklist-title"
+            >
+              <div class="checklist-heading">
+                <p>Before Takeoff</p>
+                <h2 id="travel-checklist-title">出發前確認這些都在隨身包包，不可以放行李箱哦！</h2>
+              </div>
+              <div class="checklist-grid">
+                <label
+                  class="checklist-item illustrated-checkbox"
+                  data-checkbox-unchecked="figures/checkboxes/Passportcheckbox.png"
+                  data-checkbox-checked="figures/checkboxes/Passported.png"
+                  data-checkbox-anime="figures/checkboxes/Passport anime.png"
+                >
+                  <input type="checkbox" name="packing-passport" />
+                  <img
+                    class="checkbox-art"
+                    src="figures/checkboxes/Passportcheckbox.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <span>護照</span>
+                </label>
+                <label
+                  class="checklist-item illustrated-checkbox"
+                  data-checkbox-unchecked="figures/checkboxes/Cash blank.png"
+                  data-checkbox-checked="figures/checkboxes/Cash filled.png"
+                  data-checkbox-anime="figures/checkboxes/Cash anime.png"
+                >
+                  <input type="checkbox" name="packing-money" />
+                  <img
+                    class="checkbox-art"
+                    src="figures/checkboxes/Cash blank.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <span>日圓現金</span>
+                </label>
+                <label
+                  class="checklist-item illustrated-checkbox"
+                  data-checkbox-unchecked="figures/checkboxes/Sim blank.png"
+                  data-checkbox-checked="figures/checkboxes/Sim filled.png"
+                  data-checkbox-anime="figures/checkboxes/Sim anime.png"
+                >
+                  <input type="checkbox" name="packing-sim" />
+                  <img
+                    class="checkbox-art"
+                    src="figures/checkboxes/Sim blank.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <span>SIM 卡</span>
+                </label>
+                <label
+                  class="checklist-item illustrated-checkbox"
+                  data-checkbox-unchecked="figures/checkboxes/Umbrella blank.png"
+                  data-checkbox-checked="figures/checkboxes/Umbrella filled.png"
+                  data-checkbox-anime="figures/checkboxes/Umbrella anime.png"
+                >
+                  <input type="checkbox" name="packing-bookings" />
+                  <img
+                    class="checkbox-art"
+                    src="figures/checkboxes/Umbrella blank.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <span>雨傘</span>
+                </label>
+                <label
+                  class="checklist-item illustrated-checkbox"
+                  data-checkbox-unchecked="figures/checkboxes/Power bank blank.png"
+                  data-checkbox-checked="figures/checkboxes/Power bank filled.png"
+                  data-checkbox-anime="figures/checkboxes/Power bank anime.png"
+                >
+                  <input type="checkbox" name="packing-charger" />
+                  <img
+                    class="checkbox-art"
+                    src="figures/checkboxes/Power bank blank.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <span>行動電源、airpods</span>
+                </label>
+                <label
+                  class="checklist-item illustrated-checkbox"
+                  data-checkbox-unchecked="figures/checkboxes/Pill checkbox.png"
+                  data-checkbox-checked="figures/checkboxes/Pill checkedbox.png"
+                  data-checkbox-anime="figures/checkboxes/Pill anime.png"
+                >
+                  <input type="checkbox" name="packing-medicine" />
+                  <img
+                    class="checkbox-art"
+                    src="figures/checkboxes/Pill checkbox.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <span>血壓藥、頭痛藥</span>
+                </label>
+              </div>
+            </section>
+            <section
+              class="food-journal"
+              data-title-banner="default"
+              aria-labelledby="food-journal-title"
+            >
+              <div class="checklist-heading food-journal-heading">
+                <p>Taste &amp; Play Log</p>
+                <h2 id="food-journal-title">遊樂清單</h2>
+              </div>
+              <p class="food-journal-hint">吃到就打勾，再留下你的豬豬評分。</p>
+              <div class="food-journal-list">
+                <article class="food-journal-item">
+                  <label
+                    class="food-check-item illustrated-checkbox"
+                    data-checkbox-unchecked="figures/checkboxes/Okonomiyaki checkbox.png"
+                    data-checkbox-checked="figures/checkboxes/okonomiyakied.png"
+                    data-checkbox-anime="figures/checkboxes/okonomiyaki anime.png"
+                  >
+                    <input type="checkbox" name="food-okonomiyaki" />
+                    <img
+                      class="checkbox-art"
+                      src="figures/checkboxes/Okonomiyaki checkbox.png"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <span>大阪燒</span>
+                  </label>
+                  <div
+                    class="star-rating"
+                    data-rating-key="okonomiyaki"
+                    data-rating-art="mixed"
+                    role="group"
+                    aria-label="大阪燒評分"
+                  ></div>
+                </article>
+
+                <article class="food-journal-item">
+                  <label
+                    class="food-check-item illustrated-checkbox"
+                    data-checkbox-unchecked="figures/checkboxes/taiyaki blank.png"
+                    data-checkbox-checked="figures/checkboxes/taiyaki filled.png"
+                    data-checkbox-anime="figures/checkboxes/taiyaki anime.png"
+                  >
+                    <input type="checkbox" name="food-taiyaki" />
+                    <img
+                      class="checkbox-art"
+                      src="figures/checkboxes/taiyaki blank.png"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <span>鯛魚燒</span>
+                  </label>
+                  <div
+                    class="star-rating"
+                    data-rating-key="taiyaki"
+                    data-rating-art="mixed"
+                    role="group"
+                    aria-label="鯛魚燒評分"
+                  ></div>
+                </article>
+
+                <article class="food-journal-item">
+                  <label
+                    class="food-check-item illustrated-checkbox"
+                    data-checkbox-unchecked="figures/checkboxes/Isakeya blank.png"
+                    data-checkbox-checked="figures/checkboxes/Isakeya filled.png"
+                    data-checkbox-anime="figures/checkboxes/Isakeya anime.png"
+                  >
+                    <input type="checkbox" name="food-izakaya" />
+                    <img
+                      class="checkbox-art"
+                      src="figures/checkboxes/Isakeya blank.png"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <span>居酒屋</span>
+                  </label>
+                  <div
+                    class="star-rating"
+                    data-rating-key="izakaya"
+                    data-rating-art="mixed"
+                    role="group"
+                    aria-label="居酒屋評分"
+                  ></div>
+                </article>
+
+                <article class="food-journal-item">
+                  <label
+                    class="food-check-item illustrated-checkbox"
+                    data-checkbox-unchecked="figures/checkboxes/sarumochi blank.png"
+                    data-checkbox-checked="figures/checkboxes/Sarumochi filled.png"
+                    data-checkbox-anime="figures/checkboxes/Sarumochi anime.png"
+                  >
+                    <input type="checkbox" name="food-sarumochi" />
+                    <img
+                      class="checkbox-art"
+                      src="figures/checkboxes/sarumochi blank.png"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <span>申餅</span>
+                  </label>
+                  <div
+                    class="star-rating"
+                    data-rating-key="sarumochi"
+                    data-rating-art="mixed"
+                    role="group"
+                    aria-label="申餅評分"
+                  ></div>
+                </article>
+
+                <article class="food-journal-item">
+                  <label
+                    class="food-check-item illustrated-checkbox"
+                    data-checkbox-unchecked="figures/checkboxes/mocha blank.png"
+                    data-checkbox-checked="figures/checkboxes/mocha filled.png"
+                    data-checkbox-anime="figures/checkboxes/mocha anime.png"
+                  >
+                    <input type="checkbox" name="food-uji-matcha" />
+                    <img
+                      class="checkbox-art"
+                      src="figures/checkboxes/mocha blank.png"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <span>宇治抹茶</span>
+                  </label>
+                  <div
+                    class="star-rating"
+                    data-rating-key="uji-matcha"
+                    data-rating-art="mixed"
+                    role="group"
+                    aria-label="宇治抹茶評分"
+                  ></div>
+                </article>
+
+                <article class="food-journal-item">
+                  <label
+                    class="food-check-item illustrated-checkbox"
+                    data-checkbox-unchecked="figures/checkboxes/cheese cake blank.png"
+                    data-checkbox-checked="figures/checkboxes/Cheese cake filled.png"
+                    data-checkbox-anime="figures/checkboxes/Cheese cake anime.png"
+                  >
+                    <input type="checkbox" name="food-rikuro-cheesecake" />
+                    <img
+                      class="checkbox-art"
+                      src="figures/checkboxes/cheese cake blank.png"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <span>老爺爺起司蛋糕</span>
+                  </label>
+                  <div
+                    class="star-rating"
+                    data-rating-key="rikuro-cheesecake"
+                    data-rating-art="mixed"
+                    role="group"
+                    aria-label="老爺爺起司蛋糕"
+                  ></div>
+                </article>
+
+                <article class="food-journal-item">
+                  <label
+                    class="food-check-item illustrated-checkbox"
+                    data-checkbox-unchecked="figures/checkboxes/Rokkakudo blank.png"
+                    data-checkbox-checked="figures/checkboxes/Rokkakudo filled.png"
+                    data-checkbox-anime="figures/checkboxes/Rokkakudo anime.png"
+                  >
+                    <input type="checkbox" name="rokkakudo" />
+                    <img
+                      class="checkbox-art"
+                      src="figures/checkboxes/Rokkakudo blank.png"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <span>六角堂</span>
+                  </label>
+                  <div
+                    class="star-rating"
+                    data-rating-key="rokkakudo"
+                    data-rating-art="flower"
+                    role="group"
+                    aria-label="六角堂評分"
+                  ></div>
+                </article>
+              </div>
+            </section>
+            <img
+              class="hero-title-banner"
+              data-title-banner="day-1"
+              src="figures/Banner_Day1.png"
+              alt="DAY1 台灣到大阪"
+              hidden
+            />
+            <img
+              class="hero-title-banner"
+              data-title-banner="day-2"
+              src="figures/Banner_Day2.png"
+              alt="DAY2 勝尾寺、藍天大廈"
+              hidden
+            />
+            <img
+              class="hero-title-banner"
+              data-title-banner="day-3"
+              src="figures/Banner day 3.png"
+              alt="DAY3 大阪到京都"
+              hidden
+            />
+            <img
+              class="hero-title-banner"
+              data-title-banner="day-4"
+              src="figures/Banner day 4.png"
+              alt="DAY4 花手水與宇治"
+              hidden
+            />
+            <img
+              class="hero-title-banner"
+              data-title-banner="day-5"
+              src="figures/Banner day 5.png"
+              alt="DAY5 六角堂與煙火"
+              hidden
+            />
+            <img
+              class="hero-title-banner"
+              data-title-banner="day-6"
+              src="figures/Banner day 6.png"
+              alt="DAY6 日本到台灣"
+              hidden
+            />
+          </div>
+        </div>
+
+        <section class="day-display" aria-live="polite">
+          <article class="day-card" id="day-1" data-theme="#bf7b47" hidden>
+            <p class="day-kicker">第一天 8/2(日)</p>
+            <h2>臺灣出發，前往大阪</h2>
+            <div class="itinerary-list">
+              <section class="itinerary-stop transport-stop">
+                <span class="stop-number">01</span>
+                <div class="stop-content">
+                  <h3>家 → 桃園國際機場</h3>
+                  <div class="transport-block">
+                    <span class="transport-label">交通</span>
+                    <p>高鐵 616，8:48 出發，10:09 抵達桃園</p>
+                    <p><strong>注意： 不可以坐去臺北哦！</strong></p>
+                    <p>座位 5 車 8 E</p>
+                    <p>在桃園高鐵站出口會合，一起搭機捷去桃機</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="itinerary-stop transport-stop">
+                <span class="stop-number">02</span>
+                <div class="stop-content">
+                  <h3>桃園國際機場 → 關西國際機場（KIX）</h3>
+                  <div class="transport-block">
+                    <span class="transport-label">航班</span>
+                    <p>臺灣虎航 IT 212</p>
+                    <p>14:15，<a
+                      class="map-link"
+                      href="https://maps.app.goo.gl/cFqYBSN9ZghaWhqw7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >第一航廈</a></p>
+                  </div>
+                </div>
+              </section>
+
+              <aside class="itinerary-note important-note">
+                <strong>抵達機場後</strong>
+                <p>先到巴士站領回程的利木津巴士車票還有劃位，再離開機場。</p>
+                <p>要訂8/7（五）06:50、07:05 或 07:20 的班次。</p>
+              </aside>
+
+              <section class="itinerary-stop transport-stop">
+                <span class="stop-number">03</span>
+                <div class="stop-content">
+                  <h3>關西國際機場 → <a
+                    class="map-link"
+                      href="https://maps.app.goo.gl/SD3AzgrAQ52L6qLu7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >大阪日航酒店</a></h3>
+                  <div class="transport-block">
+                    <span class="transport-label">交通</span>
+                    <p>INNN 機場接送，出示 QR code</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="itinerary-stop">
+                <span class="stop-number">04</span>
+                <div class="stop-content">
+                  <h3>
+                    <a
+                      class="map-link"
+                      href="https://www.google.com/maps/search/?api=1&amp;query=Hotel%20Nikko%20Osaka"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >大阪日航酒店</a>與周邊散步
+                  </h3>
+                  <p><a
+                    class="map-link"
+                      href="https://maps.app.goo.gl/iiqfiAPatjPzc7BY9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >道頓堀</a>、
+                    <a
+                      class="map-link"
+                      href="https://maps.app.goo.gl/gLd5J6eJRUyQJFUD7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >心齋橋</a>、
+                    <a
+                      class="map-link"
+                      href="https://maps.app.goo.gl/LqTc32u2U9kGd971A"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >大丸百貨</a>
+                  </p>
+                  <p class="stop-detail">
+                    不可以錯過
+                    <a
+                    class="map-link"
+                      href="https://maps.app.goo.gl/uNLmtAVj2nfxrv14A"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >大阪燒</a>
+                    <a>、</a>
+                    <a
+                      class="map-link"
+                      href="https://maps.app.goo.gl/giPELULqeajp36Hu5"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >鳴門鯛燒本舖</a>
+                    <a>、</a>
+                    <a
+                      class="map-link"
+                      href="https://maps.app.goo.gl/wyLtU7gCPAJj1YJo6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >老爺爺起司蛋糕</a>
+                    <a>離飯店很近！開到 20:00</a>
+                  </p>
+                </div>
+              </section>
+            </div>
+          </article>
+
+          <article class="day-card" id="day-2" data-theme="#8e6aa8" hidden>
+            <p class="day-kicker">第二天 8/3(一)</p>
+            <h2>勝尾寺 & 梅田藍天大廈</h2>
+            <div class="itinerary-list">
+              <section class="itinerary-stop transport-stop">
+                <span class="stop-number">01</span>
+                <div class="stop-content">
+                  <h3>大阪日航酒店 → 勝尾寺</h3>
+                  <div class="transport-block">
+                    <span class="transport-label">交通</span>
+                    <p>6:40 出發，走路3分鐘</p>
+                    <p>搭 6:45、6:49 或 6:52 的電車</p>
+                    <p><span class="route-line line-midosuji">御堂筋線</span>：心齋橋駅 → 箕面萱野駅，約 40 分鐘</p>
+                    <p>箕面萱野駅 → 計程車約 20 分鐘 → 勝尾寺</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="itinerary-stop">
+                <span class="stop-number">02</span>
+                <div class="stop-content">
+                  <h3><a
+                    class="map-link"
+                      href="https://maps.app.goo.gl/EiiqfA4MmLf3W3DN6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >勝尾寺</a></h3>
+                  <p>8:00 開門，出示 QR code 入山</p>
+                  <p class="stop-detail">明信片、拍照、紀念品</p>
+                </div>
+              </section>
+
+              <section class="itinerary-stop transport-stop">
+                <span class="stop-number">03</span>
+                <div class="stop-content">
+                  <h3>勝尾寺 → 大阪梅田</h3>
+                  <div class="transport-block">
+                    <span class="transport-label">交通</span>
+                    <p><p>搭計程車下山</p>
+                    <span class="route-line line-midosuji">御堂筋線</span>：
+                      箕面萱野駅 → 大阪方向 → 梅田駅</p>
+                      <p>走路去藍天大廈。</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="itinerary-stop">
+                <span class="stop-number">04</span>
+                <div class="stop-content">
+                  <h3><a
+                    class="map-link"
+                      href="https://maps.app.goo.gl/qZhBtMLEYMwB4xux9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >梅田藍天大廈</a></h3>
+                  <p>35 樓看大阪市景、<a
+                    class="map-link"
+                      href="https://maps.app.goo.gl/p5EwNcT8iHY4QvgVA"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >滝見小路</a>吃晚餐。</p>
+                </div>
+              </section>
+
+              <section class="itinerary-stop transport-stop">
+                <span class="stop-number">05</span>
+                <div class="stop-content">
+                  <h3>梅田 → 丸美衣料 太子店</h3>
+                  <div class="transport-block">
+                    <span class="transport-label">交通</span>
+                    <p><span class="route-line line-midosuji">御堂筋線</span>：梅田駅 → 動物園前駅</p>
+                    <p>走路去丸美衣料太子店。</p>
+                  </div>
+                  <p class="stop-detail alert-text">店家 19:30 關門，要留意時間。</p>
+                </div>
+              </section>
+
+              <section class="itinerary-stop">
+                <span class="stop-number">06</span>
+                <div class="stop-content">
+                  <h3><a
+                    class="map-link"
+                      href="https://maps.app.goo.gl/QKXnf8UNSSHk2rnKA"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >丸美衣料 太子店</a></h3>
+                  <p>電池 30V。</p>
+                  <p>哥哥的空調服尺寸 2 XL，深灰色背心 + 帽子優先，電風扇顏色粉紅色，沒有粉紅色就藍色、青綠色，最後才黑色</p>
+                  <p class="stop-detail">爸爸的空調服尺寸 3 XL，要買背心的</p>
+                </div>
+              </section>
+
+              <section class="itinerary-stop">
+                <span class="stop-number">07</span>
+                <div class="stop-content">
+                  <h3>要整理好行李，明天早上要拿給櫃檯</h3>
+            </div>
+          </article>
+
+          <article class="day-card" id="day-3" data-theme="#be664a" hidden>
+            <p class="day-kicker">第三天 8/4(二)</p>
+            <h2>下鴨神社、錦市場與伏見稻荷</h2>
+            <aside class="itinerary-note">
+              <strong>早上 9:00 前</strong>
+              <p>把行李交給飯店櫃台。Airporter 訂單號碼：0702-1497</p>
+            </aside>
+            <div class="itinerary-list">
+              <section class="itinerary-stop transport-stop">
+                <span class="stop-number">01</span>
+                <div class="stop-content">
+                  <h3>大阪日航酒店 → 下鴨神社</h3>
+                  <div class="transport-block">
+                    <span class="transport-label">交通</span>
+                    <p><span class="route-line line-midosuji">御堂筋線</span>：心齋橋駅 → 淀屋橋駅</p>
+                    <p><span class="route-line line-keihan-main">京阪本線 特急</span>：淀屋橋駅 → 出町柳駅</p>
+                    <p>出町柳駅步行約 10 分鐘 → 下鴨神社</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="itinerary-stop">
+                <span class="stop-number">02</span>
+                <div class="stop-content">
+                  <h3><a
+                    class="map-link"
+                      href="https://maps.app.goo.gl/bK8uxWYX28DvR1bj7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >下鴨神社</a></h3>
+                  <p>買御守、水占卜、御手洗糰子。</p>
+                  <p class="stop-detail"><a
+                    class="map-link"
+                      href="https://maps.app.goo.gl/FpF9fNfZNSNf23KF7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >下鴨神社 さるや</a>：申餅（さるもち）、まめ豆茶</p>
+                </div>
+              </section>
+
+              <section class="itinerary-stop transport-stop">
+                <span class="stop-number">03</span>
+                <div class="stop-content">
+                  <h3>下鴨神社 → 錦市場</h3>
+                  <div class="transport-block">
+                    <span class="transport-label">交通</span>
+                    <p><span class="route-line line-keihan-main">京阪本線</span>：出町柳駅 → 祇園四條駅</p>
+                    <p>步行約 10 分鐘。</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="itinerary-stop">
+                <span class="stop-number">04</span>
+                <div class="stop-content">
+                  <h3><a
+                    class="map-link"
+                      href="https://maps.app.goo.gl/TeVve7qsPNpgUfkcA"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >錦市場</a></h3>
+                  <p>不可以邊走邊吃的吃吃喝喝，我想吃章魚燒ㄛ</p>
+                </div>
+              </section>
+
+              <section class="itinerary-stop transport-stop">
+                <span class="stop-number">05</span>
+                <div class="stop-content">
+                  <h3>錦市場 → 伏見稻荷大社</h3>
+                  <div class="transport-block">
+                    <span class="transport-label">交通</span>
+                    <p><span class="route-line line-keihan-main">京阪本線</span>：祇園四條駅 → 伏見稻荷駅</p>
+                    <p>步行約 5 分鐘。</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="itinerary-stop">
+                <span class="stop-number">06</span>
+                <div class="stop-content">
+                  <h3>
+                    <a
+                      class="map-link"
+                      href="https://www.google.com/maps/search/?api=1&amp;query=伏見稲荷大社"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >伏見稻荷大社</a>
+                  </h3>
+                  <p>走訪千本鳥居。</p>
+                </div>
+              </section>
+
+              <section class="itinerary-stop transport-stop">
+                <span class="stop-number">07</span>
+                <div class="stop-content">
+                  <h3>伏見稻荷 → 京都高島屋</h3>
+                  <div class="transport-block">
+                    <span class="transport-label">交通</span>
+                    <p>走路回伏見稻荷駅</p>
+                    <p><span class="route-line line-keihan-main">京阪本線</span>（出町柳方向）至祇園四條駅。</p>
+                    <p>祇園四條駅再步行約 5 分鐘。</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="itinerary-stop">
+                <span class="stop-number">08</span>
+                <div class="stop-content">
+                  <h3>
+                    <a
+                      class="map-link"
+                      href="https://www.google.com/maps/search/?api=1&amp;query=京都高島屋S.C."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >京都高島屋</a>
+                  </h3>
+                  <p>逛街與休息。</p>
+                </div>
+              </section>
+
+              <section class="itinerary-stop transport-stop">
+                <span class="stop-number">09</span>
+                <div class="stop-content">
+                  <h3>京都高島屋 → 光芒酒店 京都烏丸六角</h3>
+                  <div class="transport-block">
+                    <span class="transport-label">交通</span>
+                    <p>步行至京都河原町駅</p>
+                    <p><span class="route-line line-hankyu-kyoto">阪急京都線</span>：（大阪梅田方向）京都河原町駅 → 烏丸駅</p>
+                    <p>步行約 8 分鐘 → 飯店</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="itinerary-stop">
+                <span class="stop-number">10</span>
+                <div class="stop-content">
+                  <h3>
+                    <a
+                      class="map-link"
+                      href="https://www.google.com/maps/search/?api=1&amp;query=Candeo%20Hotels%20Kyoto%20Karasuma%20Rokkaku"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >光芒酒店 京都烏丸六角</a>
+                  </h3>
+                  <p> check-in，確認行李是否已送達。</p>
+                  <p class="stop-detail">Airporter 訂單號碼：0702-1497</p>
+                </div>
+              </section>
+
+              <section class="itinerary-stop">
+                <span class="stop-number">11</span>
+                <div class="stop-content">
+                  <h3>
+                    <a
+                      class="map-link"
+                      href="https://www.google.com/maps/search/?api=1&amp;query=酒呑気%20びんご%20京都"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >酒呑気 びんご</a>
+                  </h3>
+                  <div class="transport-block">
+                    <span class="transport-label">交通</span>
+                    <p>從飯店步行約 7 分鐘。</p>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </article>
+
+          <article class="day-card" id="day-4" data-theme="#6a9d5d" hidden>
+            <p class="day-kicker">第四天 8/5(三)</p>
+            <h2>楊谷寺、京都車站與宇治</h2>
+            <div class="itinerary-list">
+              <section class="itinerary-stop transport-stop">
+                <span class="stop-number">01</span>
+                <div class="stop-content">
+                  <h3>光芒酒店 京都烏丸六角 → 楊谷寺</h3>
+                  <div class="transport-block">
+                    <span class="transport-label">交通</span>
+                    <p><span class="route-line line-hankyu-kyoto">阪急京都線</span>：（大阪梅田方向）烏丸駅→ 長岡天神駅</p>
+                    <p>計程車 → 楊谷寺</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="itinerary-stop">
+                <span class="stop-number">02</span>
+                <div class="stop-content">
+                  <h3>
+                    <a
+                      class="map-link"
+                      href="https://www.google.com/maps/search/?api=1&amp;query=柳谷観音%20楊谷寺"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >楊谷寺</a>
+                  </h3>
+                  <p>欣賞花手水。</p>
+                </div>
+              </section>
+
+              <section class="itinerary-stop transport-stop">
+                <span class="stop-number">03</span>
+                <div class="stop-content">
+                  <h3>楊谷寺 → 京都駅</h3>
+                  <div class="transport-block">
+                    <span class="transport-label">交通</span>
+                    <p>計程車 → 長岡京駅。</p>
+                    <p><span class="route-line line-jr-kyoto">JR 京都線</span>：（京都方向）長岡京駅 → 京都駅</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="itinerary-stop">
+                <span class="stop-number">04</span>
+                <div class="stop-content">
+                  <h3>
+                    <a
+                      class="map-link"
+                      href="https://www.google.com/maps/search/?api=1&amp;query=京都駅"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >京都駅</a>
+                  </h3>
+                  <p>逛大型百貨公司、找餐廳用餐。</p>
+                </div>
+              </section>
+
+              <section class="itinerary-stop transport-stop">
+                <span class="stop-number">05</span>
+                <div class="stop-content">
+                  <h3>京都駅 → 平等院</h3>
+                  <div class="transport-block">
+                    <span class="transport-label">交通</span>
+                    <p><span class="route-line line-jr-nara">JR 奈良線</span>：（城陽方向）京都駅 → 宇治駅</p>
+                    <p>宇治駅步行約 10 分鐘 → 平等院</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="itinerary-stop">
+                <span class="stop-number">06</span>
+                <div class="stop-content">
+                  <h3>
+                    <a
+                      class="map-link"
+                      href="https://www.google.com/maps/search/?api=1&amp;query=平等院%20宇治"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >平等院</a>與宇治抹茶
+                  </h3>
+                  <p>參觀平等院，前往
+                    <a
+                      class="map-link"
+                      href="https://www.google.com/maps/search/?api=1&amp;query=通圓本店%20宇治"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >通圓本店</a>吃抹茶。
+                  </p>
+                </div>
+              </section>
+
+              <section class="itinerary-stop transport-stop">
+                <span class="stop-number">07</span>
+                <div class="stop-content">
+                  <h3>平等院 → 光芒酒店 京都烏丸六角</h3>
+                  <div class="transport-block">
+                    <span class="transport-label">交通</span>
+                    <p><span class="route-line line-jr-nara">JR 奈良線</span>：（京都方向）宇治駅 → 京都駅</p>
+                    <p><span class="route-line line-karasuma">烏丸線</span>：轉乘 （國際會館方向）→ 烏丸御池駅</p>
+                    <p>步行約 5 分鐘 → 飯店</p>
+                  </div>
+                  <p class="stop-detail">回程沿路走走，看看有什麼好吃的。</p>
+                  <p class="stop-detail">
+                    <a
+                      class="map-link"
+                      href="https://maps.app.goo.gl/m24sBt53X3cknkhk7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >花見小路通永樂屋</a>。
+                  </p>
+                </div>
+              </section>
+            </div>
+          </article>
+
+          <article class="day-card" id="day-5" data-theme="#d87f3a" hidden>
+            <p class="day-kicker">第五天 8/6(四)</p>
+            <h2>六角堂插花 & 琵琶湖煙火大會</h2>
+            <div class="itinerary-list">
+              <section class="itinerary-stop transport-stop">
+                <span class="stop-number">01</span>
+                <div class="stop-content">
+                  <h3>光芒酒店 京都烏丸六角 → 六角堂</h3>
+                  <div class="transport-block">
+                    <span class="transport-label">交通</span>
+                    <p>從飯店步行約 2 分鐘。</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="itinerary-stop">
+                <span class="stop-number">02</span>
+                <div class="stop-content">
+                  <h3>
+                    <a
+                      class="map-link"
+                      href="https://www.google.com/maps/search/?api=1&amp;query=六角堂%20紫雲山頂法寺"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >六角堂</a>、
+                    <a
+                      class="map-link"
+                      href="https://maps.app.goo.gl/xcENXCgyA4m7ojWG6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >華道家元池坊</a></h3>
+                    <p>八樓有販售插花用品</p>
+                  </p>
+                </div>
+              </section>
+
+              <section class="itinerary-stop">
+                <span class="stop-number">03</span>
+                <div class="stop-content">
+                  <h3>插花課</h3>
+                  <p class="stop-time">13:30–15:30</p>
+                  <p>在
+                    <a
+                      class="map-link"
+                      href="https://www.google.com/maps/search/?api=1&amp;query=六角堂%20紫雲山頂法寺"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >六角堂門口</a>等待。
+                  </p>
+                </div>
+              </section>
+
+              <section class="itinerary-stop transport-stop">
+                <span class="stop-number">04</span>
+                <div class="stop-content">
+                  <h3>六角堂 → <a
+                      class="map-link"
+                      href="https://maps.app.goo.gl/aqpjXPurNJNEE7Se9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >琵琶湖濱大津</a>
+                  </h3>
+                  <div class="transport-block">
+                    <span class="transport-label">交通</span>
+                    <p>步行約 7 分鐘至烏丸御池駅。</p>
+                    <p><span class="route-line line-tozai">東西線</span>：列車直通 <span class="route-line line-keihan-keishin">京阪京津線</span> → 琵琶湖濱大津駅，中途不用下車。</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="itinerary-stop feature-stop">
+                <span class="stop-number">05</span>
+                <div class="stop-content">
+                  <h3>琵琶湖煙火大會</h3>
+                  <p class="stop-time">19:30–20:30</p>
+                  <p>抵達後跟著人潮前往會場，沿路會有各種小吃。</p>
+                  <p class="stop-detail">在 Ticket Plaza 出示票券。</p>
+                  <p><a
+                    class="resource-link"
+                    href="https://cache.biwako-visitors.jp/hanabi/assets/pdf/2026_gourmetmap.pdf?20260715_1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >煙火大會會場資訊</a></p>
+                </div>
+              </section>
+
+              <section class="itinerary-stop transport-stop">
+                <span class="stop-number">06</span>
+                <div class="stop-content">
+                  <h3>琵琶湖濱大津 → 光芒酒店 京都烏丸六角</h3>
+                  <div class="transport-block">
+                    <span class="transport-label">交通</span>
+                    <p><span class="route-line line-keihan-keishin">京阪京津線</span>：（太秦天神川方向），直通 <span class="route-line line-tozai">東西線</span> → 烏丸御池駅</p>
+                    <p>走路 5 分鐘 → 飯店</p>
+                  </div>
+                </div>
+              </section>
+
+              <aside class="itinerary-note important-note">
+                <strong>睡前提醒</strong>
+                <p>提前在網路辦理明天回程航班的報到。</p>
+              </aside>
+            </div>
+          </article>
+
+          <article class="day-card" id="day-6" data-theme="#cd8c7b" hidden>
+            <p class="day-kicker">第六天 8/7(五)</p>
+            <h2>肥家</h2>
+            <div class="itinerary-list">
+              <section class="itinerary-stop transport-stop">
+                <span class="stop-number">01</span>
+                <div class="stop-content">
+                  <h3>光芒酒店 京都烏丸六角 → 關西機場</h3>
+                  <p class="stop-time">06:40 左右退房</p>
+                  <div class="transport-block">
+                    <span class="transport-label">交通</span>
+                    <p>飯店搭計程車約 10 分鐘 → 利木津巴士乘車處 H2</p>
+                    <p><a
+                    class="map-link"
+                      href="https://maps.app.goo.gl/yiAvfybEvGAc4qNV7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >京都車站八條口觀光巴士停車場</a></p>
+                    <p class="address-text">日本〒601-8003 Kyoto, Minami Ward, Higashikujo Nishisannocho</p>
+                    <p>搭利木津巴士前往關西機場。</p>
+                  </div>
+                  <p class="stop-detail alert-text">應該是這三班其中一班6:50、7:05 或 7:20；最晚不要超過 7:40。</p>
+                </div>
+              </section>
+
+              <section class="itinerary-stop transport-stop">
+                <span class="stop-number">02</span>
+                <div class="stop-content">
+                  <h3>關西國際機場（KIX）→ 桃園國際機場（TPE）</h3>
+                  <div class="transport-block">
+                    <span class="transport-label">航班</span>
+                    <p>臺灣虎航 IT285</p>
+                    <p>11:25，<a
+                      class="map-link"
+                      href="https://maps.app.goo.gl/8Jx94Hiv1Ffa3DPP6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >第一航廈</a></p>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <section class="selector-panel">
+        <div class="poster-shell">
+          <div class="poster-header">
+            <p class="eyebrow">Select A Date</p>
+              </div>
+
+          <div class="poster-map" role="tablist" aria-label="旅行日期">
+            <img src="figures/buttons.png" alt="8月2日至8月7日的日期插圖按鈕" />
+            <button class="hotspot" data-day="day-1" aria-selected="false" type="button">
+              <span>8/2</span>
+            </button>
+            <button class="hotspot" data-day="day-2" aria-selected="false" type="button">
+              <span>8/3</span>
+            </button>
+            <button class="hotspot" data-day="day-3" aria-selected="false" type="button">
+              <span>8/4</span>
+            </button>
+            <button class="hotspot" data-day="day-4" aria-selected="false" type="button">
+              <span>8/5</span>
+            </button>
+            <button class="hotspot" data-day="day-5" aria-selected="false" type="button">
+              <span>8/6</span>
+            </button>
+            <button class="hotspot" data-day="day-6" aria-selected="false" type="button">
+              <span>8/7</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="date-rail" aria-label="首頁按鈕">
+          <button class="date-chip home-chip" data-day="default" type="button">回首頁</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
