@@ -143,7 +143,7 @@ function updateCheckboxArt(checkbox, animate = false) {
     image.src = finalImage;
     label.classList.remove("is-animating");
     checkboxArtTimers.delete(checkbox);
-  }, 200);
+  }, 500);
 
   checkboxArtTimers.set(checkbox, timer);
 }
